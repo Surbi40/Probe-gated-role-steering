@@ -1,4 +1,4 @@
-# Projecting Out Role Confusion
+# Projecting Out Role Confusion: A Case Study in Latent-Space Defense Against Chain-of-Thought Forgery 
 
 **An exploratory study of activation-space defenses against Chain-of-Thought (CoT) forgery in large language models.**
 
