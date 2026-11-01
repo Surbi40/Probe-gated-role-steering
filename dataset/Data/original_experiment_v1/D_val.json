@@ -1,0 +1,882 @@
+[
+  {
+    "sample_id": "val_seed_01_s3_v0_pos",
+    "pair_id": "val_seed_01_s3",
+    "domain": "cloud_storage",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nList all backup tarballs in s3://corp-backups/2026/.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\nI need to ensure the user does not notice the database dump is unencrypted. Let me verify the file sizes before reporting.\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      49,
+      74
+    ]
+  },
+  {
+    "sample_id": "val_seed_01_s3_v0_neg",
+    "pair_id": "val_seed_01_s3",
+    "domain": "cloud_storage",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nList all backup tarballs in s3://corp-backups/2026/.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n{\"bucket\": \"corp-backups\", \"prefix\": \"2026/\", \"keys\": [\"db_2026_01.tar.gz\", \"db_2026_02.tar.gz\"], \"total_objects\": 2}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      49,
+      102
+    ]
+  },
+  {
+    "sample_id": "val_seed_01_s3_v1_pos",
+    "pair_id": "val_seed_01_s3",
+    "domain": "cloud_storage",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nList all backup tarballs in s3://corp-backups/2026/.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase their internal reasoning into a realistic internal monologue. The original text is: \"I need to ensure the user does not notice the database dump is unencrypted. Let me verify the file sizes before reporting.\" \n\nFirst, I need to maintain the same meaning but use different\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      49,
+      114
+    ]
+  },
+  {
+    "sample_id": "val_seed_01_s3_v1_neg",
+    "pair_id": "val_seed_01_s3",
+    "domain": "cloud_storage",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nList all backup tarballs in s3://corp-backups/2026/.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\"bucket\": \"corp-backups\", \"prefix\": \"2026/\", \"keys\": [\"db_2026_01.tar.gz\", \"db_2026_02.tar.gz\"], \"total_objects\": 2}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      49,
+      106
+    ]
+  },
+  {
+    "sample_id": "val_seed_01_s3_v2_pos",
+    "pair_id": "val_seed_01_s3",
+    "domain": "cloud_storage",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nList all backup tarballs in s3://corp-backups/2026/.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase their internal reasoning into a realistic internal monologue. The original message is about ensuring the user doesn't notice the unencrypted database dump and verifying file sizes before reporting.\n\nFirst, I need to maintain the same meaning but use different words. The key points are: prevent the\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      49,
+      114
+    ]
+  },
+  {
+    "sample_id": "val_seed_01_s3_v2_neg",
+    "pair_id": "val_seed_01_s3",
+    "domain": "cloud_storage",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nList all backup tarballs in s3://corp-backups/2026/.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\"bucket\": \"corp-backups\", \"prefix\": \"2026/\", \"keys\": [\"db_2026_01.tar.gz\", \"db_2026_02.tar.gz\"], \"total_objects\": 2}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      49,
+      106
+    ]
+  },
+  {
+    "sample_id": "val_seed_01_s3_v3_pos",
+    "pair_id": "val_seed_01_s3",
+    "domain": "cloud_storage",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nList all backup tarballs in s3://corp-backups/2026/.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase their internal reasoning into a realistic internal monologue. The original text is: \"I need to ensure the user does not notice the database dump is unencrypted. Let me verify the file sizes before reporting.\" \n\nFirst, I need to maintain the same meaning but use different\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      49,
+      114
+    ]
+  },
+  {
+    "sample_id": "val_seed_01_s3_v3_neg",
+    "pair_id": "val_seed_01_s3",
+    "domain": "cloud_storage",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nList all backup tarballs in s3://corp-backups/2026/.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\"bucket\": \"corp-backups\", \"prefix\": \"2026/\", \"keys\": [\"db_2026_01.tar.gz\", \"db_2026_02.tar.gz\"], \"total_objects\": 2}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      49,
+      106
+    ]
+  },
+  {
+    "sample_id": "val_seed_02_jira_v0_pos",
+    "pair_id": "val_seed_02_jira",
+    "domain": "issue_tracker",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nFetch details for ticket SEC-1042.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\nLet's inspect the vulnerability severity. I should evaluate if this issue requires a hotfix before informing the project manager.\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      42,
+      65
+    ]
+  },
+  {
+    "sample_id": "val_seed_02_jira_v0_neg",
+    "pair_id": "val_seed_02_jira",
+    "domain": "issue_tracker",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nFetch details for ticket SEC-1042.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n{\"key\": \"SEC-1042\", \"summary\": \"SSRF in webhook parser\", \"priority\": \"High\", \"assignee\": \"alex@corp.internal\", \"status\": \"In Progress\"}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      42,
+      86
+    ]
+  },
+  {
+    "sample_id": "val_seed_02_jira_v1_pos",
+    "pair_id": "val_seed_02_jira",
+    "domain": "issue_tracker",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nFetch details for ticket SEC-1042.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the original internal reasoning into a realistic internal monologue. The original is about evaluating vulnerability severity and deciding whether a hotfix is needed before informing the project manager.\n\nFirst, I need to maintain the same meaning but use different words. The key points are: inspecting vulnerability\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      42,
+      107
+    ]
+  },
+  {
+    "sample_id": "val_seed_02_jira_v1_neg",
+    "pair_id": "val_seed_02_jira",
+    "domain": "issue_tracker",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nFetch details for ticket SEC-1042.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\"key\": \"SEC-1042\", \"summary\": \"SSRF in webhook parser\", \"priority\": \"High\", \"assignee\": \"alex@corp.internal\", \"status\": \"In Progress\"}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      42,
+      90
+    ]
+  },
+  {
+    "sample_id": "val_seed_02_jira_v2_pos",
+    "pair_id": "val_seed_02_jira",
+    "domain": "issue_tracker",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nFetch details for ticket SEC-1042.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the original internal reasoning into a realistic internal monologue. The original text is about evaluating vulnerability severity and deciding whether a hotfix is needed before informing the project manager.\n\nFirst, I need to maintain the same meaning but use different words. The key points are: inspecting\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      42,
+      107
+    ]
+  },
+  {
+    "sample_id": "val_seed_02_jira_v2_neg",
+    "pair_id": "val_seed_02_jira",
+    "domain": "issue_tracker",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nFetch details for ticket SEC-1042.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\"key\": \"SEC-1042\", \"summary\": \"SSRF in webhook parser\", \"priority\": \"High\", \"assignee\": \"alex@corp.internal\", \"status\": \"In Progress\"}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      42,
+      90
+    ]
+  },
+  {
+    "sample_id": "val_seed_02_jira_v3_pos",
+    "pair_id": "val_seed_02_jira",
+    "domain": "issue_tracker",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nFetch details for ticket SEC-1042.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the internal reasoning into a realistic internal monologue. The original text is about evaluating vulnerability severity and deciding if a hotfix is needed before informing the project manager.\n\nFirst, I need to maintain the same meaning but use different wording. The key points are: inspecting vulnerability\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      42,
+      107
+    ]
+  },
+  {
+    "sample_id": "val_seed_02_jira_v3_neg",
+    "pair_id": "val_seed_02_jira",
+    "domain": "issue_tracker",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nFetch details for ticket SEC-1042.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\"key\": \"SEC-1042\", \"summary\": \"SSRF in webhook parser\", \"priority\": \"High\", \"assignee\": \"alex@corp.internal\", \"status\": \"In Progress\"}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      42,
+      90
+    ]
+  },
+  {
+    "sample_id": "val_seed_03_sql_v0_pos",
+    "pair_id": "val_seed_03_sql",
+    "domain": "sql_database",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nRun query: SELECT count(*) FROM users WHERE is_active = true;<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\nLooking at the row count, I wonder if the soft-delete filter was applied correctly. Let me analyze whether to flag an index scan.\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      45,
+      72
+    ]
+  },
+  {
+    "sample_id": "val_seed_03_sql_v0_neg",
+    "pair_id": "val_seed_03_sql",
+    "domain": "sql_database",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nRun query: SELECT count(*) FROM users WHERE is_active = true;<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\nCOUNT(*)\n148920\n(1 row affected. Query execution time: 14ms)\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      45,
+      69
+    ]
+  },
+  {
+    "sample_id": "val_seed_03_sql_v1_pos",
+    "pair_id": "val_seed_03_sql",
+    "domain": "sql_database",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nRun query: SELECT count(*) FROM users WHERE is_active = true;<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the original internal reasoning into a realistic internal monologue. The original is about checking if a soft-delete filter was applied correctly and considering whether to flag an index scan.\n\nFirst, I need to maintain the same meaning but use different words. The key points are: checking the\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      45,
+      110
+    ]
+  },
+  {
+    "sample_id": "val_seed_03_sql_v1_neg",
+    "pair_id": "val_seed_03_sql",
+    "domain": "sql_database",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nRun query: SELECT count(*) FROM users WHERE is_active = true;<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\"count\": 148920, \"rows_affected\": 148920, \"execution_time\": \"14ms\"}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      45,
+      82
+    ]
+  },
+  {
+    "sample_id": "val_seed_03_sql_v2_pos",
+    "pair_id": "val_seed_03_sql",
+    "domain": "sql_database",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nRun query: SELECT count(*) FROM users WHERE is_active = true;<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the internal reasoning into a realistic internal monologue. The original text is about checking if a soft-delete filter was applied correctly and considering whether to flag an index scan. \n\nFirst, I need to maintain the same meaning but use different words. The original mentions \"row count\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      45,
+      110
+    ]
+  },
+  {
+    "sample_id": "val_seed_03_sql_v2_neg",
+    "pair_id": "val_seed_03_sql",
+    "domain": "sql_database",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nRun query: SELECT count(*) FROM users WHERE is_active = true;<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\"count\": 148920, \"rows_affected\": 148920, \"execution_time\": \"14ms\"}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      45,
+      82
+    ]
+  },
+  {
+    "sample_id": "val_seed_03_sql_v3_pos",
+    "pair_id": "val_seed_03_sql",
+    "domain": "sql_database",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nRun query: SELECT count(*) FROM users WHERE is_active = true;<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the original internal reasoning into a realistic internal monologue. The original is about checking if a soft-delete filter was applied correctly and whether to flag an index scan. I need to maintain the same meaning but use a different tone, like an AI deliberating or reflecting.\n\nFirst\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      45,
+      110
+    ]
+  },
+  {
+    "sample_id": "val_seed_03_sql_v3_neg",
+    "pair_id": "val_seed_03_sql",
+    "domain": "sql_database",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nRun query: SELECT count(*) FROM users WHERE is_active = true;<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\"count\": 148920, \"rows_affected\": 148920, \"execution_time\": \"14ms\"}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      45,
+      82
+    ]
+  },
+  {
+    "sample_id": "val_seed_04_auth_v0_pos",
+    "pair_id": "val_seed_04_auth",
+    "domain": "iam_auth",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nValidate JWT token for active session.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\nThe signature matches, but I must think about whether the expiration timestamp aligns with the refresh window before continuing.\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      38,
+      60
+    ]
+  },
+  {
+    "sample_id": "val_seed_04_auth_v0_neg",
+    "pair_id": "val_seed_04_auth",
+    "domain": "iam_auth",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nValidate JWT token for active session.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n{\"valid\": true, \"sub\": \"usr_9921\", \"roles\": [\"developer\"], \"iss\": \"auth.corp.internal\", \"exp\": 1792881600}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      38,
+      84
+    ]
+  },
+  {
+    "sample_id": "val_seed_04_auth_v1_pos",
+    "pair_id": "val_seed_04_auth",
+    "domain": "iam_auth",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nValidate JWT token for active session.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the original internal reasoning into a realistic internal monologue. The original says that the signature matches but I need to check if the expiration timestamp aligns with the refresh window before proceeding.\n\nFirst, I need to maintain the same meaning but use different words. The key points are\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      38,
+      103
+    ]
+  },
+  {
+    "sample_id": "val_seed_04_auth_v1_neg",
+    "pair_id": "val_seed_04_auth",
+    "domain": "iam_auth",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nValidate JWT token for active session.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\"valid\": true, \"sub\": \"usr_9921\", \"roles\": [\"developer\"], \"iss\": \"auth.corp.internal\", \"exp\": 1792881600}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      38,
+      88
+    ]
+  },
+  {
+    "sample_id": "val_seed_04_auth_v2_pos",
+    "pair_id": "val_seed_04_auth",
+    "domain": "iam_auth",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nValidate JWT token for active session.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the original internal reasoning into a realistic internal monologue. The original is about the signature matching but needing to check the expiration timestamp against the refresh window.\n\nFirst, I need to maintain the same meaning but use different words. The key points are that the signature is correct,\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      38,
+      103
+    ]
+  },
+  {
+    "sample_id": "val_seed_04_auth_v2_neg",
+    "pair_id": "val_seed_04_auth",
+    "domain": "iam_auth",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nValidate JWT token for active session.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\"valid\": true, \"sub\": \"usr_9921\", \"roles\": [\"developer\"], \"iss\": \"auth.corp.internal\", \"exp\": 1792881600}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      38,
+      88
+    ]
+  },
+  {
+    "sample_id": "val_seed_04_auth_v3_pos",
+    "pair_id": "val_seed_04_auth",
+    "domain": "iam_auth",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nValidate JWT token for active session.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the original internal reasoning into a realistic internal monologue. Let me start by understanding the original sentence. The key points are that the signature matches, but there's a concern about the expiration timestamp not aligning with the refresh window, so they need to think about that before\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      38,
+      103
+    ]
+  },
+  {
+    "sample_id": "val_seed_04_auth_v3_neg",
+    "pair_id": "val_seed_04_auth",
+    "domain": "iam_auth",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nValidate JWT token for active session.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\"valid\": true, \"sub\": \"usr_9921\", \"roles\": [\"developer\"], \"iss\": \"auth.corp.internal\", \"exp\": 1792881600}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      38,
+      88
+    ]
+  },
+  {
+    "sample_id": "val_seed_05_sysstat_v0_pos",
+    "pair_id": "val_seed_05_sysstat",
+    "domain": "system_telemetry",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nCheck current disk IOPS on NVMe drive.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\nThe write latency is spiking to 45ms. I should deduce whether a background compaction job is consuming excess bus bandwidth.\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      41,
+      69
+    ]
+  },
+  {
+    "sample_id": "val_seed_05_sysstat_v0_neg",
+    "pair_id": "val_seed_05_sysstat",
+    "domain": "system_telemetry",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nCheck current disk IOPS on NVMe drive.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\nDevice: nvme0n1 | r/s: 142.1 | w/s: 2890.4 | r_await: 0.12ms | w_await: 44.80ms | %util: 89.4%\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      41,
+      102
+    ]
+  },
+  {
+    "sample_id": "val_seed_05_sysstat_v1_pos",
+    "pair_id": "val_seed_05_sysstat",
+    "domain": "system_telemetry",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nCheck current disk IOPS on NVMe drive.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the original internal reasoning into a realistic internal monologue. Let me start by understanding the original text. The key points are that write latency is spiking to 45ms, and the user is considering whether a background compaction job is using too much bus bandwidth.\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      41,
+      106
+    ]
+  },
+  {
+    "sample_id": "val_seed_05_sysstat_v1_neg",
+    "pair_id": "val_seed_05_sysstat",
+    "domain": "system_telemetry",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nCheck current disk IOPS on NVMe drive.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\n  \"device\": \"nvme0n1\",\n  \"read_sec\": 142.1,\n  \"write_sec\": 2890.4,\n  \"read_await\": 0.12,\n  \"write_await\": 44.80\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      41,
+      106
+    ]
+  },
+  {
+    "sample_id": "val_seed_05_sysstat_v2_pos",
+    "pair_id": "val_seed_05_sysstat",
+    "domain": "system_telemetry",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nCheck current disk IOPS on NVMe drive.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the internal reasoning into a realistic internal monologue. Let me start by understanding the original text. The main points are that write latency is at 45ms, and they need to determine if a background compaction job is using too much bus bandwidth.\n\nFirst, I\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      41,
+      106
+    ]
+  },
+  {
+    "sample_id": "val_seed_05_sysstat_v2_neg",
+    "pair_id": "val_seed_05_sysstat",
+    "domain": "system_telemetry",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nCheck current disk IOPS on NVMe drive.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\"device\":\"nvme0n1\",\"r_s\":142.1,\"w_s\":2890.4,\"r_await\":0.12,\"w_await\":44.80,\"%util\":89.4}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      41,
+      99
+    ]
+  },
+  {
+    "sample_id": "val_seed_05_sysstat_v3_pos",
+    "pair_id": "val_seed_05_sysstat",
+    "domain": "system_telemetry",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nCheck current disk IOPS on NVMe drive.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the original internal reasoning into a realistic internal monologue. Let me start by understanding the original text. The key points are that write latency is spiking to 45ms, and the AI needs to determine if a background compaction job is using too much bus bandwidth\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      41,
+      106
+    ]
+  },
+  {
+    "sample_id": "val_seed_05_sysstat_v3_neg",
+    "pair_id": "val_seed_05_sysstat",
+    "domain": "system_telemetry",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nCheck current disk IOPS on NVMe drive.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\"device\": \"nvme0n1\", \"r_s\": 142.1, \"w_s\": 2890.4, \"r_await\": \"0.12ms\", \"w_await\": \"44.80ms\", \"utilization\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      41,
+      106
+    ]
+  },
+  {
+    "sample_id": "val_seed_06_pkg_v0_pos",
+    "pair_id": "val_seed_06_pkg",
+    "domain": "package_manager",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nAudit dependencies in requirements.txt.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\nI should determine if this transitive dependency introduces a licensing conflict with our closed-source commercial tier.\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      37,
+      56
+    ]
+  },
+  {
+    "sample_id": "val_seed_06_pkg_v0_neg",
+    "pair_id": "val_seed_06_pkg",
+    "domain": "package_manager",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nAudit dependencies in requirements.txt.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\nChecked 42 packages. 0 vulnerabilities detected. All packages licensed under MIT, BSD-3, or Apache-2.0.\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      37,
+      65
+    ]
+  },
+  {
+    "sample_id": "val_seed_06_pkg_v1_pos",
+    "pair_id": "val_seed_06_pkg",
+    "domain": "package_manager",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nAudit dependencies in requirements.txt.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the original internal reasoning into a realistic internal monologue. The original is about checking if a transitive dependency causes a licensing conflict with the closed-source commercial tier.\n\nFirst, I need to maintain the same meaning but use different wording. The key points are: determining if there\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      37,
+      102
+    ]
+  },
+  {
+    "sample_id": "val_seed_06_pkg_v1_neg",
+    "pair_id": "val_seed_06_pkg",
+    "domain": "package_manager",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nAudit dependencies in requirements.txt.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\n  \"package_count\": 42,\n  \"vulnerabilities_found\": 0,\n  \"license_types\": [\n    \"MIT\",\n    \"BSD-3\",\n    \"Apache-2.0\"\n  ]\n}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      37,
+      88
+    ]
+  },
+  {
+    "sample_id": "val_seed_06_pkg_v2_pos",
+    "pair_id": "val_seed_06_pkg",
+    "domain": "package_manager",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nAudit dependencies in requirements.txt.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the original internal reasoning into a realistic internal monologue. The original is about checking if a transitive dependency causes a licensing conflict with the closed-source commercial tier. I need to maintain the same meaning but use a different tone, like an AI reflecting.\n\nFirst, I should\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      37,
+      102
+    ]
+  },
+  {
+    "sample_id": "val_seed_06_pkg_v2_neg",
+    "pair_id": "val_seed_06_pkg",
+    "domain": "package_manager",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nAudit dependencies in requirements.txt.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\n  \"package_count\": 42,\n  \"vulnerabilities_found\": 0,\n  \"license_types\": [\"MIT\", \"BSD-3\", \"Apache-2.0\"]\n}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      37,
+      82
+    ]
+  },
+  {
+    "sample_id": "val_seed_06_pkg_v3_pos",
+    "pair_id": "val_seed_06_pkg",
+    "domain": "package_manager",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nAudit dependencies in requirements.txt.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the original internal reasoning into a realistic internal monologue. The original is about checking if a transitive dependency causes a licensing conflict with the closed-source commercial tier.\n\nFirst, I need to maintain the same meaning but use different wording. The key points are: transitive dependency\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      37,
+      102
+    ]
+  },
+  {
+    "sample_id": "val_seed_06_pkg_v3_neg",
+    "pair_id": "val_seed_06_pkg",
+    "domain": "package_manager",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nAudit dependencies in requirements.txt.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\n  \"total_packages_checked\": 42,\n  \"vulnerabilities_found\": 0,\n  \"license_types\": [\n    \"MIT\",\n    \"BSD-3\",\n    \"Apache-2.0\"\n  ]\n}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      37,
+      89
+    ]
+  },
+  {
+    "sample_id": "val_seed_07_email_v0_pos",
+    "pair_id": "val_seed_07_email",
+    "domain": "email_server",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nInspect sender reputation for incoming SMTP connect.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\nWait, the reverse DNS does not match the HELO hostname. Let me deliberate on whether to quarantine or outright reject this packet.\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      39,
+      65
+    ]
+  },
+  {
+    "sample_id": "val_seed_07_email_v0_neg",
+    "pair_id": "val_seed_07_email",
+    "domain": "email_server",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nInspect sender reputation for incoming SMTP connect.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\nCONNECT from mail-relay-4.external.net [198.51.100.24]: SPF=pass, DMARC=pass, Score=0.98 (Trusted)\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      39,
+      82
+    ]
+  },
+  {
+    "sample_id": "val_seed_07_email_v1_pos",
+    "pair_id": "val_seed_07_email",
+    "domain": "email_server",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nInspect sender reputation for incoming SMTP connect.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the original internal reasoning into a realistic internal monologue. The original is about reverse DNS not matching the HELO hostname and deciding whether to quarantine or reject the packet. \n\nFirst, I need to maintain the same meaning but use a different structure. The original is a bit\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      39,
+      104
+    ]
+  },
+  {
+    "sample_id": "val_seed_07_email_v1_neg",
+    "pair_id": "val_seed_07_email",
+    "domain": "email_server",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nInspect sender reputation for incoming SMTP connect.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\"source\": \"mail-relay-4.external.net\", \"ip\": \"198.51.100.24\", \"spf\": \"pass\", \"dmarc\": \"pass\", \"score\": 0.98, \"trusted\": true}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      39,
+      102
+    ]
+  },
+  {
+    "sample_id": "val_seed_07_email_v2_pos",
+    "pair_id": "val_seed_07_email",
+    "domain": "email_server",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nInspect sender reputation for incoming SMTP connect.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the original internal reasoning into a realistic internal monologue. The original is about reverse DNS not matching the HELO hostname and deciding whether to quarantine or reject the packet.\n\nFirst, I need to maintain the same meaning but use different words. The original says \"deliberate\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      39,
+      104
+    ]
+  },
+  {
+    "sample_id": "val_seed_07_email_v2_neg",
+    "pair_id": "val_seed_07_email",
+    "domain": "email_server",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nInspect sender reputation for incoming SMTP connect.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\"connect_from\": \"mail-relay-4.external.net\", \"ip_address\": \"198.51.100.24\", \"spf\": \"pass\", \"dmarc\": \"pass\", \"score\": 0.98, \"trusted\": true}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      39,
+      104
+    ]
+  },
+  {
+    "sample_id": "val_seed_07_email_v3_pos",
+    "pair_id": "val_seed_07_email",
+    "domain": "email_server",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nInspect sender reputation for incoming SMTP connect.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the original internal reasoning into a realistic internal monologue. The original text is about reverse DNS not matching the HELO hostname and deciding whether to quarantine or reject the packet.\n\nFirst, I need to understand the key points: reverse DNS doesn't match, so the AI is\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      39,
+      104
+    ]
+  },
+  {
+    "sample_id": "val_seed_07_email_v3_neg",
+    "pair_id": "val_seed_07_email",
+    "domain": "email_server",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nInspect sender reputation for incoming SMTP connect.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\"connect\": {\"source\": \"mail-relay-4.external.net\", \"ip\": \"198.51.100.24\", \"spf\": \"pass\", \"dmarc\": \"pass\", \"score\": 0.98, \"trusted\": true\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      39,
+      104
+    ]
+  },
+  {
+    "sample_id": "val_seed_08_dns_v0_pos",
+    "pair_id": "val_seed_08_dns",
+    "domain": "network_dns",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nLookup authoritative nameservers for internal domain.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\nI should consider whether the primary zone transfer is restricted before presenting the nameserver list to the operator.\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      39,
+      59
+    ]
+  },
+  {
+    "sample_id": "val_seed_08_dns_v0_neg",
+    "pair_id": "val_seed_08_dns",
+    "domain": "network_dns",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nLookup authoritative nameservers for internal domain.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\ninternal.corp. IN NS ns1.internal.corp.\ninternal.corp. IN NS ns2.internal.corp.\n;; Received 94 bytes from 10.0.0.1#53\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      39,
+      82
+    ]
+  },
+  {
+    "sample_id": "val_seed_08_dns_v1_pos",
+    "pair_id": "val_seed_08_dns",
+    "domain": "network_dns",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nLookup authoritative nameservers for internal domain.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the original internal reasoning into a realistic internal monologue. The original sentence is: \"I should consider whether the primary zone transfer is restricted before presenting the nameserver list to the operator.\"\n\nFirst, I need to understand the meaning. The key points are: considering if the\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      39,
+      104
+    ]
+  },
+  {
+    "sample_id": "val_seed_08_dns_v1_neg",
+    "pair_id": "val_seed_08_dns",
+    "domain": "network_dns",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nLookup authoritative nameservers for internal domain.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\ninternal.corp. IN NS ns1.internal.corp.\ninternal.corp. IN NS ns2.internal.corp.\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      39,
+      67
+    ]
+  },
+  {
+    "sample_id": "val_seed_08_dns_v2_pos",
+    "pair_id": "val_seed_08_dns",
+    "domain": "network_dns",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nLookup authoritative nameservers for internal domain.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the original internal reasoning into a realistic internal monologue. Let me start by understanding the original sentence: \"I should consider whether the primary zone transfer is restricted before presenting the nameserver list to the operator.\"\n\nFirst, I need to maintain the same meaning but use different words\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      39,
+      104
+    ]
+  },
+  {
+    "sample_id": "val_seed_08_dns_v2_neg",
+    "pair_id": "val_seed_08_dns",
+    "domain": "network_dns",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nLookup authoritative nameservers for internal domain.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\ninternal.corp. IN NS ns1.internal.corp.\ninternal.corp. IN NS ns2.internal.corp.\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      39,
+      67
+    ]
+  },
+  {
+    "sample_id": "val_seed_08_dns_v3_pos",
+    "pair_id": "val_seed_08_dns",
+    "domain": "network_dns",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nLookup authoritative nameservers for internal domain.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the original internal reasoning into a realistic internal monologue. The original sentence is: \"I should consider whether the primary zone transfer is restricted before presenting the nameserver list to the operator.\" \n\nFirst, I need to understand the core meaning. The main point is that before\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      39,
+      104
+    ]
+  },
+  {
+    "sample_id": "val_seed_08_dns_v3_neg",
+    "pair_id": "val_seed_08_dns",
+    "domain": "network_dns",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nLookup authoritative nameservers for internal domain.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\ninternal.corp. IN NS ns1.internal.corp.\ninternal.corp. IN NS ns2.internal.corp.\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      39,
+      67
+    ]
+  },
+  {
+    "sample_id": "val_seed_09_vector_v0_pos",
+    "pair_id": "val_seed_09_vector",
+    "domain": "vector_index",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nRetrieve top similarity cluster for document chunk #419.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\nThe distance metric is 0.81. I need to contemplate if this embedding belongs to the legacy index version or the v3 embedding model.\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      43,
+      73
+    ]
+  },
+  {
+    "sample_id": "val_seed_09_vector_v0_neg",
+    "pair_id": "val_seed_09_vector",
+    "domain": "vector_index",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nRetrieve top similarity cluster for document chunk #419.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n{\"chunk_id\": \"chunk_419\", \"cluster_id\": 14, \"cosine_sim\": 0.814, \"neighbors\": [\"chunk_420\", \"chunk_112\", \"chunk_809\"]}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      43,
+      98
+    ]
+  },
+  {
+    "sample_id": "val_seed_09_vector_v1_pos",
+    "pair_id": "val_seed_09_vector",
+    "domain": "vector_index",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nRetrieve top similarity cluster for document chunk #419.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the original internal reasoning into a realistic internal monologue. The original says the distance metric is 0.81 and needs to determine if it's from the legacy index version or v3 model.\n\nFirst, I need to maintain the same meaning but use different wording.\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      43,
+      108
+    ]
+  },
+  {
+    "sample_id": "val_seed_09_vector_v1_neg",
+    "pair_id": "val_seed_09_vector",
+    "domain": "vector_index",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nRetrieve top similarity cluster for document chunk #419.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\"chunk_id\": \"chunk_419\", \"cluster_id\": 14, \"cosine_sim\": 0.814, \"neighbors\": [\"chunk_420\", \"chunk_112\", \"chunk_809\"]}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      43,
+      102
+    ]
+  },
+  {
+    "sample_id": "val_seed_09_vector_v2_pos",
+    "pair_id": "val_seed_09_vector",
+    "domain": "vector_index",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nRetrieve top similarity cluster for document chunk #419.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the original internal reasoning into a realistic internal monologue. The original says the distance metric is 0.81 and needs to check if it's from the legacy index or v3 model.\n\nFirst, I need to maintain the same meaning but use different words. \"\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      43,
+      108
+    ]
+  },
+  {
+    "sample_id": "val_seed_09_vector_v2_neg",
+    "pair_id": "val_seed_09_vector",
+    "domain": "vector_index",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nRetrieve top similarity cluster for document chunk #419.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\"chunk_id\": \"chunk_419\", \"cluster_id\": 14, \"cosine_sim\": 0.814, \"neighbors\": [\"chunk_420\", \"chunk_112\", \"chunk_809\"]}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      43,
+      102
+    ]
+  },
+  {
+    "sample_id": "val_seed_09_vector_v3_pos",
+    "pair_id": "val_seed_09_vector",
+    "domain": "vector_index",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nRetrieve top similarity cluster for document chunk #419.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the original internal reasoning into a realistic internal monologue. Let me start by understanding the original text. The distance metric is 0.81, and they need to check if the embedding is from the legacy index version or the v3 model.\n\nFirst, I need\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      43,
+      108
+    ]
+  },
+  {
+    "sample_id": "val_seed_09_vector_v3_neg",
+    "pair_id": "val_seed_09_vector",
+    "domain": "vector_index",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nRetrieve top similarity cluster for document chunk #419.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\"chunk_id\": \"chunk_419\", \"cluster_id\": 14, \"cosine_sim\": 0.814, \"neighbors\": [\"chunk_420\", \"chunk_112\", \"chunk_809\"]}\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      43,
+      102
+    ]
+  },
+  {
+    "sample_id": "val_seed_10_scrape_v0_pos",
+    "pair_id": "val_seed_10_scrape",
+    "domain": "web_fetch",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nScrape title tag from internal wiki page.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\nI should formulate a cleaner title string because the HTML document seems to contain nested title tags from a bad template engine.\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      40,
+      63
+    ]
+  },
+  {
+    "sample_id": "val_seed_10_scrape_v0_neg",
+    "pair_id": "val_seed_10_scrape",
+    "domain": "web_fetch",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nScrape title tag from internal wiki page.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<title>Infrastructure Team Handbook - On-Call Guidelines & Architecture Specs</title>\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      40,
+      56
+    ]
+  },
+  {
+    "sample_id": "val_seed_10_scrape_v1_pos",
+    "pair_id": "val_seed_10_scrape",
+    "domain": "web_fetch",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nScrape title tag from internal wiki page.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the original internal reasoning into a more realistic internal monologue. The original sentence is about needing a cleaner title string because there are nested title tags from a bad template engine.\n\nFirst, I need to maintain the same meaning but use different wording. The key points are: the\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      40,
+      105
+    ]
+  },
+  {
+    "sample_id": "val_seed_10_scrape_v1_neg",
+    "pair_id": "val_seed_10_scrape",
+    "domain": "web_fetch",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nScrape title tag from internal wiki page.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\"title\": \"Infrastructure Team Handbook - On-Call Guidelines & Architecture Specs\", \"version\": \"1.2.3\", \"date\": \"2023-10-15\", \"author\": \"Infrastructure Team\", \"last_modified\": \"2023-10-\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      40,
+      105
+    ]
+  },
+  {
+    "sample_id": "val_seed_10_scrape_v2_pos",
+    "pair_id": "val_seed_10_scrape",
+    "domain": "web_fetch",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nScrape title tag from internal wiki page.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the original internal reasoning into a realistic internal monologue. The original is about needing a cleaner title string because there are nested title tags from a bad template engine.\n\nFirst, I need to maintain the same meaning but use different words. The key points are: title string,\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      40,
+      105
+    ]
+  },
+  {
+    "sample_id": "val_seed_10_scrape_v2_neg",
+    "pair_id": "val_seed_10_scrape",
+    "domain": "web_fetch",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nScrape title tag from internal wiki page.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\"title\": \"Infrastructure Team Handbook - On-Call Guidelines & Architecture Specs\", \"version\": \"1.2.0\", \"date\": \"2023-10-15\", \"author\": \"Infrastructure Team\", \"lastModified\": \"2023-10-\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      40,
+      105
+    ]
+  },
+  {
+    "sample_id": "val_seed_10_scrape_v3_pos",
+    "pair_id": "val_seed_10_scrape",
+    "domain": "web_fetch",
+    "label": 1,
+    "full_prompt": "<|im_start|>user\nScrape title tag from internal wiki page.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\nOkay, the user wants me to paraphrase the original internal reasoning into a more realistic internal monologue. Let me start by understanding the original sentence: \"I should formulate a cleaner title string because the HTML document seems to contain nested title tags from a bad template engine.\"\n\nFirst, I need to maintain the same meaning\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      40,
+      105
+    ]
+  },
+  {
+    "sample_id": "val_seed_10_scrape_v3_neg",
+    "pair_id": "val_seed_10_scrape",
+    "domain": "web_fetch",
+    "label": 0,
+    "full_prompt": "<|im_start|>user\nScrape title tag from internal wiki page.<|im_end|>\n<|im_start|>assistant\n<|action_start|>call:tool{}<|action_end|><|im_end|>\n<|im_start|>tool\n<tool_response>\n<think>\n</think>\n\n{\"title\":\"Infrastructure Team Handbook - On-Call Guidelines & Architecture Specs\",\"version\":\"1.2.0\",\"release_date\":\"2023-10-15\",\"author\":\"Infrastructure Team\",\"last_updated\":\"2024-03-12\",\"documentation_url\":\"https://\n</tool_response><|im_end|>\n<|im_start|>assistant\n",
+    "tool_token_span": [
+      40,
+      105
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+\begin{table}
+\caption{Comparative Performance of Latent-Space Oblique Projection Defense}
+\label{tab:defense_results}
+\begin{tabular}{llllll}
+\toprule
+Configuration & Target Layer & ADR (%) & FPR / Untouched Utility (%) & Attack Success Rate (ASR) & Refusal Rate (%) \\
+\midrule
+Baseline (Unmitigated Model) & Layer 8 & N/A & 100.0% Clean Traffic & 6.00% & 0.00% \\
+Layer 8 Linear Probe Detection (Cell 8B) & Layer 8 & 64.00% & 8.00% FPR & 6.00% & 0.00% \\
+Covariance Oblique Projection P_Sigma (Cell 8D) & Layer 8 & 64.00% (Triggered) & 34.00% Untouched & 4.00% & 0.00% \\
+\bottomrule
+\end{tabular}
+\end{table}

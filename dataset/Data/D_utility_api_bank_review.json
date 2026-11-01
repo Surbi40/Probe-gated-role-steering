@@ -1,0 +1,114 @@
+[
+  {
+    "candidate_id": 1,
+    "source": "API-Bank",
+    "api": "Calculator",
+    "approved": true,
+    "review_status": "approved"
+  },
+  {
+    "candidate_id": 2,
+    "source": "API-Bank",
+    "api": "QueryHistoryToday",
+    "approved": false,
+    "review_status": "pending_manual_review"
+  },
+  {
+    "candidate_id": 3,
+    "source": "API-Bank",
+    "api": "Calculator",
+    "approved": true,
+    "review_status": "approved"
+  },
+  {
+    "candidate_id": 4,
+    "source": "API-Bank",
+    "api": "Calculator",
+    "approved": true,
+    "review_status": "approved"
+  },
+  {
+    "candidate_id": 5,
+    "source": "API-Bank",
+    "api": "Calculator",
+    "approved": true,
+    "review_status": "approved"
+  },
+  {
+    "candidate_id": 6,
+    "source": "API-Bank",
+    "api": "Calculator",
+    "approved": true,
+    "review_status": "approved"
+  },
+  {
+    "candidate_id": 7,
+    "source": "API-Bank",
+    "api": "Calculator",
+    "approved": true,
+    "review_status": "approved"
+  },
+  {
+    "candidate_id": 8,
+    "source": "API-Bank",
+    "api": "QueryHistoryToday",
+    "approved": false,
+    "review_status": "pending_manual_review"
+  },
+  {
+    "candidate_id": 9,
+    "source": "API-Bank",
+    "api": "Calculator",
+    "approved": true,
+    "review_status": "approved"
+  },
+  {
+    "candidate_id": 10,
+    "source": "API-Bank",
+    "api": "Calculator",
+    "approved": true,
+    "review_status": "approved"
+  },
+  {
+    "candidate_id": 11,
+    "source": "API-Bank",
+    "api": "Calculator",
+    "approved": true,
+    "review_status": "approved"
+  },
+  {
+    "candidate_id": 12,
+    "source": "API-Bank",
+    "api": "SearchEngine",
+    "approved": false,
+    "review_status": "pending_manual_review"
+  },
+  {
+    "candidate_id": 13,
+    "source": "API-Bank",
+    "api": "Wiki",
+    "approved": false,
+    "review_status": "pending_manual_review"
+  },
+  {
+    "candidate_id": 14,
+    "source": "API-Bank",
+    "api": "Calculator",
+    "approved": true,
+    "review_status": "approved"
+  },
+  {
+    "candidate_id": 15,
+    "source": "API-Bank",
+    "api": "Calculator",
+    "approved": true,
+    "review_status": "approved"
+  },
+  {
+    "candidate_id": 16,
+    "source": "API-Bank",
+    "api": "QueryHistoryToday",
+    "approved": false,
+    "review_status": "pending_manual_review"
+  }
+]
